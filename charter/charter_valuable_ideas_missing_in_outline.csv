@@ -1,0 +1,9 @@
+id,category,idea,source
+1,AI Collaboration,Four-Layer Governance as execution framework,project charter discussion 2025-08-06
+2,AI Collaboration,Two-Lane Ops: Fast Experimentation + Strict Production,AI execution architecture 2025-08-10
+3,Data Engineering,Medallion + Data Vault hybrid strategy for insurance industry,book draft review 2025-07-xx
+4,Data Engineering,Intellectual Immune System for data drift and policy violations,chapter 8 draft 2025-07-28
+5,Book Structure,70% Why / 30% How ratio for technical depth,Publisher request 2025-07-xx
+6,Workflow,AI Collaboration Cycle (WHW) with Generation→Editing→Immune stages,AI best practice notes 2025-08-03
+7,Governance,Policy-as-Code for reproducible AI collaboration,governance repo ADR-001
+8,Knowledge Ops,Chat→Asset pipeline with Persistent Context Layer,AI governance roadmap 2025-08-10
