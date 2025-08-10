@@ -1,0 +1,4 @@
+context_id: de-book
+why: "Write a data engineering & architecture book with consistent governance."
+constraints:
+  - "Preserve outline structure and messaging; add value via notes/columns."

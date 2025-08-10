@@ -1,0 +1,6 @@
+workflow:
+  steps:
+    - draft
+    - tech_review
+    - layout
+    - final_review

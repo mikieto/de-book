@@ -1,0 +1,8 @@
+charter:
+  id: de-book
+  governance_model: four-layer
+  goals:
+    - "構造とメッセージ維持で価値を足す"
+  priorities:
+    - "優先度の不一致は憲章に寄せる"
+    - "粒度の不一致はアウトラインに寄せる"

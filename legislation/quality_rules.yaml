@@ -1,0 +1,3 @@
+rules:
+  - id: Q-clarity
+    desc: "短く明確に"
