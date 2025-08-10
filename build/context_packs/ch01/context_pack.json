@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "unit": "ch01",
+    "generated_at": "2025-08-10T11:45:26.720731Z",
+    "schema_version": "1.0",
+    "source_repo": "context-ops"
+  },
+  "constitution": {
+    "constitution": {
+      "purpose": "Ensure quality, traceability, and reproducibility in AI-assisted content production.\n",
+      "principles": [
+        "Four-layer governance (Constitution → Legislation → Knowledge → Records)",
+        "Human-in-the-loop final approval"
+      ],
+      "guardrails": [
+        "Privacy-aware handling of logs",
+        "Cite sources with dates"
+      ]
+    }
+  },
+  "legislation": {
+    "style": {
+      "style": {
+        "tone": "Professional, concise, instructive",
+        "inclusive_language": true,
+        "terminology_policy": "Use glossary; avoid ambiguous synonyms; prefer consistency",
+        "citation_rules": "Provide sources with dates (YYYY-MM-DD)"
+      }
+    },
+    "workflow": {
+      "workflow": {
+        "content_creation": {
+          "steps": [
+            {
+              "name": "Structure Definition",
+              "executor": "ai_author",
+              "reviewers": [
+                "editor",
+                "subject_expert",
+                "reader_rep"
+              ],
+              "output": "outline_entry"
+            },
+            {
+              "name": "Draft Generation",
+              "executor": "ai_author",
+              "reviewers": [
+                "editor",
+                "subject_expert"
+              ],
+              "output": "draft_doc"
+            },
+            {
+              "name": "AI Self-Review",
+              "executor": "ai_author",
+              "reviewer": "ai_author",
+              "output": "draft_validated"
+            },
+            {
+              "name": "Editorial Review",
+              "executor": "editor",
+              "output": "editorial_comments"
+            },
+            {
+              "name": "Technical Review",
+              "executor": "subject_expert",
+              "output": "technical_comments"
+            },
+            {
+              "name": "Reader Review",
+              "executor": "reader_rep",
+              "output": "reader_feedback"
+            },
+            {
+              "name": "Layout Generation",
+              "executor": "ai_author",
+              "reviewers": [
+                "editor"
+              ],
+              "output": "layout_artifact"
+            },
+            {
+              "name": "Final Approval",
+              "executor": "approver",
+              "output": "final_artifact"
+            }
+          ]
+        }
+      }
+    },
+    "personas": {
+      "personas": [
+        {
+          "id": "ai_author",
+          "name": "AI Author Agent"
+        },
+        {
+          "id": "editor",
+          "name": "Editor"
+        },
+        {
+          "id": "subject_expert",
+          "name": "Subject-Matter Expert"
+        },
+        {
+          "id": "reader_rep",
+          "name": "Reader Representative"
+        },
+        {
+          "id": "approver",
+          "name": "Approver"
+        }
+      ]
+    },
+    "quality_rules": {
+      "quality_rules": [
+        {
+          "id": "align_to_purpose",
+          "rule": "Every chapter/section must align to an explicit purpose"
+        },
+        {
+          "id": "glossary_coverage",
+          "rule": "All domain terms must be defined or referenced in glossary"
+        },
+        {
+          "id": "evidence_required",
+          "rule": "Facts/claims require sources and dates"
+        },
+        {
+          "id": "review_gates",
+          "rule": "Editorial, technical, and reader gates must be passed before approval"
+        }
+      ]
+    }
+  },
+  "knowledge": {
+    "glossary_base": {
+      "glossary": []
+    }
+  }
+}
