@@ -1,0 +1,18 @@
+name: debook-validate
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate context pack (ch01)
+        run: |
+          python3 tools/ci/validate_pack.py build/context_packs/ch01/context_pack.json
